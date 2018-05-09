@@ -1,0 +1,5 @@
+info:
+  profile: dev
+  from: git
+
+foo: foo version 5 

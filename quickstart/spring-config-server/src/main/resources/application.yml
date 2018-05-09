@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: 192.168.100.100:/data/repository/git/spring/spring-config
+#          search-paths: repo
+          username: spring
+          password: Spring1234
+
+server:
+  port: 1201
+  
+eureka: 
+  client:  
+    serviceUrl:  
+      defaultZone: http://master.eureka.yint.io:1001/eureka/,http://backup1.eureka.yint.io:1002/eureka/,http://backup2.eureka.yint.io:1003/eureka/

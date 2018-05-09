@@ -1,0 +1,18 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://master.eureka.yint.io:1001/eureka/,http://backup1.eureka.yint.io:1002/eureka/,http://backup2.eureka.yint.io:1003/eureka/
+server:
+  port: 1769
+spring:
+  application:
+    name: service-zuul
+    
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: eureka-consumer-feign
+    api-b:
+      path: /api-b/**
+      serviceId: eureka-consumer-ribbon-hystrix
