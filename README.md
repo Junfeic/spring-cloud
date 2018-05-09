@@ -75,3 +75,4 @@ payment-center == direct sample.payment.direct == [ADD, PAY, CANCEL]
   -- sample.payment.payment -- payment-center/receiver [ADD, PAY, CANCEL]
   -- sample.stock.payment -- stock-center/payment-receiver [CANCEL]
   -- sample.order.payment -- order-center/payment-receiver [PAY, CANCEL]
+ 
