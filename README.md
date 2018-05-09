@@ -4,6 +4,7 @@ A quickstart of spring-cloud-2.0.1.Finchley.M9 and a sample demo artifact compos
 # quickstart:
 
 application	port	boot location  ==> dependencies	memo
+
 consul-server	8500	E:\consul_1.0.7_windows_amd64>consul.exe agent -dev  ==> 	none，  -http-port=1500 to change	
 
 consul-client	2511	mvn spring-boot:run	 ==> consul-server	
